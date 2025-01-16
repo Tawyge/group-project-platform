@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Project Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Group Project Platform</h1>
+        <p>Collaborate, Compete, and Win!</p>
+    </header>
+
+    <main>
+        <!-- Registration Form -->
+        <section id="registration">
+            <h2>Register</h2>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="year">Year of Study:</label>
+                <select id="year" name="year" required>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Group Assignment Section -->
+        <section id="groupAssignment">
+            <h2>Group Assignment</h2>
+            <button id="generateGroups">Generate Groups</button>
+            <div id="groupResults"></div>
+        </section>
+
+        <!-- Project Submission Section -->
+        <section id="projectSubmission">
+            <h2>Project Submission</h2>
+            <form id="submissionForm">
+                <label for="groupName">Group Name:</label>
+                <input type="text" id="groupName" name="groupName" required>
+
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic" required>
+                    <option value="topic1">Topic 1</option>
+                    <option value="topic2">Topic 2</option>
+                    <option value="topic3">Topic 3</option>
+                </select>
+
+                <label for="file">Upload Project File:</label>
+                <input type="file" id="file" name="file" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Voting Section -->
+        <section id="voting">
+            <h2>Vote for Your Favorite Project</h2>
+            <div id="projectsList"></div>
+        </section>
+
+        <!-- Final Presentation Section -->
+        <section id="finalPresentation">
+            <h2>Final Presentation</h2>
+            <p>Details of the final presentation will be announced here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Group Project Platform</p>
+    </footer>
+</body>
+</html>
